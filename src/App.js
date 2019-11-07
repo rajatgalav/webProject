@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, hashHistory, Route } from 'react-router';
-import Feed from './pages/feed';
+import Feed from './pages/Feed';
 import Profile from './pages/profile';
 import AboutUs from './pages/aboutus';
 import './App.css';
@@ -19,7 +19,9 @@ class App extends Component {
   render() {
 
     return (
-      <Provider store={store}>
+      <div>
+      <Feed />
+      {/*<Provider store={store}>
         <Router history={browserHistory}>
 
           <Route path="/" component={Feed}/>
@@ -29,8 +31,8 @@ class App extends Component {
           <Route path="/about" component={AboutUs}/>
 
         </Router>
-      </Provider>
-
+      </Provider>*/}
+      </div>
     );
 
   }
